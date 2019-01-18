@@ -1,6 +1,9 @@
 # DiSwarm
 Discord-based Swarm Protocol Library
 
+## Install
+Download from this repo or ```python -m pip install DiSwarm```
+
 ## Usage
 Main class: `Swarm`
 
