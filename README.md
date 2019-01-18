@@ -8,7 +8,7 @@ Download from this repo or ```python -m pip install DiSwarm```
 Main class: `Swarm`
 
 Initialize like so:
-```swarm = Swarm(discord channel id: str, discord bot token: str, swarm id: str)```
+```swarm = Swarm(discord channel id: str, discord bot token: str, swarm id: str, bot id: str)```
 
 Sending message to swarm:
 ```swarm.send(string message)```
@@ -22,6 +22,7 @@ Before you end your program, call ```swarm.end()``` to cleanly end the discord b
 
 ## Notes
 - Swarm ID: the same for all bots in your swarm, but it should be unique from any other swarm, at least on your swarm channel. To be safe, use a randomly generated string or number. Make sure every bot in your swarm has the same id, because bots with different ids cannot see eachother's messages.
+- Bot ID: should be different for every bot in a swarm
 - ```get_queue()``` will only return messages from your swarm, so you can have multiple swarms in the same channel.
 - DiSwarm uses Fernet encryption, provided by the `cryptography` library. Install this library through `pip install cryptography`.
 - Also requires `pip install discord`
